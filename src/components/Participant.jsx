@@ -93,13 +93,17 @@ export function Participant() {
     if (!user || !course) return <div className="error">User or Course data not found</div>;
 
     const calculateOverallProgress = () => {
-        let total = 0, completed = 0;
+        if (!course) return 0;
+        let total = 0;
+        course.chapters.forEach(c => total += c.lessons.length);
+
+        let completed = 0;
         Object.values(user.progress).forEach(chapter => {
             chapter.lessons.forEach(l => {
-                total++;
                 if (l.completed) completed++;
             })
         });
+
         return total > 0 ? Math.round((completed / total) * 100) : 0;
     };
 

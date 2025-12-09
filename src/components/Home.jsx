@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { getCurrentUser, loadUsersData, logoutUser } from '../utils/storage';
+import { getCurrentUser, loadUsersData, loadCourseData, logoutUser } from '../utils/storage';
 import './Home.css';
 
 export function Home() {
     const [users, setUsers] = useState([]);
+    const [course, setCourse] = useState(null);
     const [currentUser, setCurrentUser] = useState(null);
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
@@ -19,8 +20,12 @@ export function Home() {
 
         const fetchData = async () => {
             try {
-                const data = await loadUsersData();
-                setUsers(data.users);
+                const [usersData, courseData] = await Promise.all([
+                    loadUsersData(),
+                    loadCourseData()
+                ]);
+                setUsers(usersData.users);
+                setCourse(courseData);
                 setLoading(false);
             } catch (err) {
                 console.error(err);
@@ -31,15 +36,18 @@ export function Home() {
     }, [navigate]);
 
     const calculateProgress = (userProgress) => {
-        let total = 0, completed = 0;
-        if (!userProgress) return 0;
+        if (!course) return 0;
+        let total = 0;
+        course.chapters.forEach(c => total += c.lessons.length);
 
-        Object.values(userProgress).forEach(chapter => {
-            chapter.lessons.forEach(lesson => {
-                total++;
-                if (lesson.completed) completed++;
+        let completed = 0;
+        if (userProgress) {
+            Object.values(userProgress).forEach(chapter => {
+                chapter.lessons.forEach(lesson => {
+                    if (lesson.completed) completed++;
+                });
             });
-        });
+        }
         return total > 0 ? Math.round((completed / total) * 100) : 0;
     };
 
