@@ -1,0 +1,142 @@
+.home-page {
+    padding: 20px;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: var(--surface);
+    padding: 16px 24px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.current-user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.avatar-small {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logout-btn {
+    background-color: transparent;
+    color: var(--danger);
+    border: 1px solid var(--border);
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 59, 48, 0.1);
+    opacity: 1;
+}
+
+.table-container {
+    background: var(--surface);
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th {
+    text-align: left;
+    padding: 16px 24px;
+    background: rgba(0, 0, 0, 0.02);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.users-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.users-table tr:last-child td {
+    border-bottom: none;
+}
+
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.user-link {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.me-badge {
+    color: var(--text-secondary);
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.row-current-user {
+    background-color: rgba(0, 122, 255, 0.03);
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 4px;
+    transition: width 0.5s ease-out;
+}
+
+.progress-text {
+    font-variant-numeric: tabular-nums;
+    color: var(--text-secondary);
+    font-size: 14px;
+    min-width: 3em;
+    text-align: right;
+}

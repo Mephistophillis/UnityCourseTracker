@@ -1,0 +1,36 @@
+{
+    "chapters": [
+        {
+            "id": "chapter_1",
+            "title": "Основы Unity",
+            "lessons": [
+                {
+                    "id": "lesson_1_1",
+                    "title": "Введение в Unity"
+                },
+                {
+                    "id": "lesson_1_2",
+                    "title": "Установка"
+                },
+                {
+                    "id": "lesson_1_3",
+                    "title": "First Scene"
+                }
+            ]
+        },
+        {
+            "id": "chapter_2",
+            "title": "C# и Скрипты",
+            "lessons": [
+                {
+                    "id": "lesson_2_1",
+                    "title": "C# Basics"
+                },
+                {
+                    "id": "lesson_2_2",
+                    "title": "Скрипты"
+                }
+            ]
+        }
+    ]
+}
