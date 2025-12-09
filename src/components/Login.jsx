@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getCurrentUser, loginUser } from '../utils/storage';
+import { getCurrentUser, loginUser, registerUser } from '../utils/storage';
 
 export function Login() {
     const navigate = useNavigate();
@@ -14,12 +14,14 @@ export function Login() {
         }
 
         // Define callback for Telegram widget
-        window.onTelegramAuth = (user) => {
-            loginUser({
+        window.onTelegramAuth = async (user) => {
+            const userData = {
                 id: user.id.toString(),
                 username: user.username,
                 avatar: user.photo_url
-            });
+            };
+            loginUser(userData);
+            await registerUser(userData);
             navigate('/home');
         };
 

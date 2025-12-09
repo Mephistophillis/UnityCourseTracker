@@ -17,15 +17,17 @@ export function Home() {
         }
         setCurrentUser(user);
 
-        loadUsersData()
-            .then(data => {
+        const fetchData = async () => {
+            try {
+                const data = await loadUsersData();
                 setUsers(data.users);
                 setLoading(false);
-            })
-            .catch(err => {
+            } catch (err) {
                 console.error(err);
                 setLoading(false);
-            });
+            }
+        };
+        fetchData();
     }, [navigate]);
 
     const calculateProgress = (userProgress) => {

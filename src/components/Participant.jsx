@@ -21,35 +21,71 @@ export function Participant() {
         setCurrentUser(curr);
         setIsOwnProfile(String(curr.id) === String(userId));
 
-        Promise.all([
-            loadUsersData(),
-            loadCourseData()
-        ]).then(([userData, courseData]) => {
-            const foundUser = userData.users.find(u => String(u.id) === String(userId));
-            if (!foundUser) {
-                // Handle user not found in list (maybe new auth user not in json yet)
-                // For now just redirect or show error
-                console.warn("User not found in users.json");
+        async function fetchData() {
+            try {
+                const [userData, courseData] = await Promise.all([
+                    loadUsersData(),
+                    loadCourseData()
+                ]);
+
+                // Supabase returns { users: [] } from loadUsersData
+                // If we are looking for a specific user but rely on the "list", we might miss if list is paginated (future proofing)
+                // But for now, let's use getUser directly if specific user is needed, OR stick to list if we want to show rank/etc.
+                // The original code used the list to find the user. 
+
+                // Better approach: fetch specific user profile directly for reliability
+                const directUser = await import('../utils/storage').then(m => m.getUser(userId));
+
+                if (directUser) {
+                    setUser(directUser);
+                } else {
+                    // Fallback to local user if it matches and is just created
+                    if (String(curr.id) === String(userId)) {
+                        setUser({
+                            ...curr,
+                            progress: curr.progress || {} // ensure progress object exists if we fallback
+                        });
+                    } else {
+                        console.warn("User not found");
+                    }
+                }
+
+                setCourse(courseData);
+                setLoading(false);
+            } catch (err) {
+                console.error(err);
+                setLoading(false);
             }
-            setUser(foundUser);
-            setCourse(courseData);
-            setLoading(false);
-        }).catch(err => {
-            console.error(err);
-            setLoading(false);
-        });
+        }
+
+        fetchData();
     }, [userId, navigate]);
 
-    const handleCheckboxChange = (chapterId, lessonId, currentCompleted) => {
+    const handleCheckboxChange = async (chapterId, lessonId, currentCompleted) => {
         if (!isOwnProfile) return;
 
-        const success = updateUserProgress(user.id, chapterId, lessonId, !currentCompleted);
-        if (success) {
-            // Optimistic update
-            const updatedUser = { ...user };
-            const lesson = updatedUser.progress[chapterId].lessons.find(l => l.id === lessonId);
-            lesson.completed = !currentCompleted;
-            setUser(updatedUser);
+        // Optimistic update
+        const updatedUser = { ...user };
+        // Deep clone progress to avoid mutation issues if state is complex
+        updatedUser.progress = JSON.parse(JSON.stringify(updatedUser.progress));
+
+        if (!updatedUser.progress[chapterId]) updatedUser.progress[chapterId] = { lessons: [] };
+
+        let lesson = updatedUser.progress[chapterId].lessons.find(l => l.id === lessonId);
+        if (!lesson) {
+            lesson = { id: lessonId, completed: false };
+            updatedUser.progress[chapterId].lessons.push(lesson);
+        }
+
+        lesson.completed = !currentCompleted;
+        setUser(updatedUser);
+
+        // Send to server
+        const success = await updateUserProgress(user.id, chapterId, lessonId, !currentCompleted);
+        if (!success) {
+            // Revert on failure (optional, but good practice)
+            console.error("Failed to save progress");
+            // simplified: just warn for now
         }
     };
 
