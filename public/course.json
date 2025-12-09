@@ -2,33 +2,917 @@
     "chapters": [
         {
             "id": "chapter_1",
-            "title": "Основы Unity",
+            "title": "Watch before you start",
             "lessons": [
                 {
                     "id": "lesson_1_1",
-                    "title": "Введение в Unity"
+                    "title": "Important to know - Mindset of the course"
                 },
                 {
                     "id": "lesson_1_2",
-                    "title": "Установка"
+                    "title": "Important to know - Bugs and Q&A"
                 },
                 {
                     "id": "lesson_1_3",
-                    "title": "First Scene"
+                    "title": "Important to know - Pep talk"
                 }
             ]
         },
         {
             "id": "chapter_2",
-            "title": "C# и Скрипты",
+            "title": "Crash Course",
             "lessons": [
                 {
                     "id": "lesson_2_1",
-                    "title": "C# Basics"
+                    "title": "Important to know - Crash Course"
                 },
                 {
                     "id": "lesson_2_2",
-                    "title": "Скрипты"
+                    "title": "Install Unity"
+                },
+                {
+                    "id": "lesson_2_3",
+                    "title": "Windows and Tools"
+                },
+                {
+                    "id": "lesson_2_4",
+                    "title": "Components in Unity"
+                },
+                {
+                    "id": "lesson_2_5",
+                    "title": "Basics of C#"
+                },
+                {
+                    "id": "lesson_2_6",
+                    "title": "Unity's execution order"
+                },
+                {
+                    "id": "lesson_2_7",
+                    "title": "C# - Functions"
+                },
+                {
+                    "id": "lesson_2_8",
+                    "title": "Input & Movement"
+                },
+                {
+                    "id": "lesson_2_9",
+                    "title": "Decision making & Jump"
+                },
+                {
+                    "id": "lesson_2_10",
+                    "title": "Animator"
+                },
+                {
+                    "id": "lesson_2_11",
+                    "title": "Animation transitions"
+                },
+                {
+                    "id": "lesson_2_12",
+                    "title": "Character flip logic"
+                },
+                {
+                    "id": "lesson_2_13",
+                    "title": "Collision detection"
+                },
+                {
+                    "id": "lesson_2_14",
+                    "title": "Jump,Fall & Blend tree"
+                },
+                {
+                    "id": "lesson_2_15",
+                    "title": "Attack animation"
+                },
+                {
+                    "id": "lesson_2_16",
+                    "title": "Attack logic & Enemy detection"
+                },
+                {
+                    "id": "lesson_2_17",
+                    "title": "Timers & Cooldowns"
+                },
+                {
+                    "id": "lesson_2_18",
+                    "title": "OOP - Inheritance"
+                },
+                {
+                    "id": "lesson_2_19",
+                    "title": "OOP - Polymorphism"
+                },
+                {
+                    "id": "lesson_2_20",
+                    "title": "OOP - Encapsulation"
+                },
+                {
+                    "id": "lesson_2_21",
+                    "title": "Conclusion & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_3",
+            "title": "FSM & Project Setup",
+            "lessons": [
+                {
+                    "id": "lesson_3_1",
+                    "title": "Create project & Get assets"
+                },
+                {
+                    "id": "lesson_3_2",
+                    "title": "What is Finite State Machine"
+                },
+                {
+                    "id": "lesson_3_3",
+                    "title": "Create Finite State Machine"
+                },
+                {
+                    "id": "lesson_3_4",
+                    "title": "New States & Structure"
+                },
+                {
+                    "id": "lesson_3_5",
+                    "title": "Setup New Input System"
+                },
+                {
+                    "id": "lesson_3_6",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_4",
+            "title": "Player State Machine",
+            "lessons": [
+                {
+                    "id": "lesson_4_1",
+                    "title": "Idle and Movement animations"
+                },
+                {
+                    "id": "lesson_4_2",
+                    "title": "Movement logic"
+                },
+                {
+                    "id": "lesson_4_3",
+                    "title": "Character Flip Logic"
+                },
+                {
+                    "id": "lesson_4_4",
+                    "title": "Jump - Input, States & Animations"
+                },
+                {
+                    "id": "lesson_4_5",
+                    "title": "Jump - Collision and Horizontal Movement"
+                },
+                {
+                    "id": "lesson_4_6",
+                    "title": "Wall Slide State"
+                },
+                {
+                    "id": "lesson_4_7",
+                    "title": "Wall Jump State"
+                },
+                {
+                    "id": "lesson_4_8",
+                    "title": "Dash State"
+                },
+                {
+                    "id": "lesson_4_9",
+                    "title": "Attack State"
+                },
+                {
+                    "id": "lesson_4_10",
+                    "title": "Combo attacks"
+                },
+                {
+                    "id": "lesson_4_11",
+                    "title": "Queue Combo Attacks"
+                },
+                {
+                    "id": "lesson_4_12",
+                    "title": "Jump Attack"
+                },
+                {
+                    "id": "lesson_4_13",
+                    "title": "Better Wall Detection, Idle & Move"
+                },
+                {
+                    "id": "lesson_4_14",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_5",
+            "title": "Level & Camera Setup",
+            "lessons": [
+                {
+                    "id": "lesson_5_1",
+                    "title": "Tie Palette Setup & Assets"
+                },
+                {
+                    "id": "lesson_5_2",
+                    "title": "Tile Map & Sorting Layers"
+                },
+                {
+                    "id": "lesson_5_3",
+                    "title": "Cinemachine Camera"
+                },
+                {
+                    "id": "lesson_5_4",
+                    "title": "Cinemachine Confiner"
+                },
+                {
+                    "id": "lesson_5_5",
+                    "title": "Parallax background"
+                },
+                {
+                    "id": "lesson_5_6",
+                    "title": "Endless background"
+                },
+                {
+                    "id": "lesson_5_7",
+                    "title": "Demo Level Setup"
+                },
+                {
+                    "id": "lesson_5_8",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_6",
+            "title": "Enemy State Machine",
+            "lessons": [
+                {
+                    "id": "lesson_6_1",
+                    "title": "Creating a Base Entity Script"
+                },
+                {
+                    "id": "lesson_6_2",
+                    "title": "Enemy Setup"
+                },
+                {
+                    "id": "lesson_6_3",
+                    "title": "Walk & idle"
+                },
+                {
+                    "id": "lesson_6_4",
+                    "title": "Attack State"
+                },
+                {
+                    "id": "lesson_6_5",
+                    "title": "Player Detection"
+                },
+                {
+                    "id": "lesson_6_6",
+                    "title": "Chase & Attack"
+                },
+                {
+                    "id": "lesson_6_7",
+                    "title": "Battle Timer & Retreat Abilty"
+                },
+                {
+                    "id": "lesson_6_8",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_7",
+            "title": "Combat System",
+            "lessons": [
+                {
+                    "id": "lesson_7_1",
+                    "title": "Target detection"
+                },
+                {
+                    "id": "lesson_7_2",
+                    "title": "Damage system"
+                },
+                {
+                    "id": "lesson_7_3",
+                    "title": "Take Damage Override"
+                },
+                {
+                    "id": "lesson_7_4",
+                    "title": "On Damage VFX"
+                },
+                {
+                    "id": "lesson_7_5",
+                    "title": "On Damage Knockback"
+                },
+                {
+                    "id": "lesson_7_6",
+                    "title": "Enemy's Death"
+                },
+                {
+                    "id": "lesson_7_7",
+                    "title": "layers Death"
+                },
+                {
+                    "id": "lesson_7_8",
+                    "title": "Interface an Hem Chest"
+                },
+                {
+                    "id": "lesson_7_9",
+                    "title": "Enemy Stunned State"
+                },
+                {
+                    "id": "lesson_7_10",
+                    "title": "Player Counter Attack State & Logic"
+                },
+                {
+                    "id": "lesson_7_11",
+                    "title": "0n Hit VFX"
+                },
+                {
+                    "id": "lesson_7_12",
+                    "title": "Health bar"
+                },
+                {
+                    "id": "lesson_7_13",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_8",
+            "title": "Stat System",
+            "lessons": [
+                {
+                    "id": "lesson_8_1",
+                    "title": "Target detection"
+                },
+                {
+                    "id": "lesson_8_2",
+                    "title": "Damage system"
+                },
+                {
+                    "id": "lesson_8_3",
+                    "title": "Take Damage Override"
+                },
+                {
+                    "id": "lesson_8_4",
+                    "title": "On Damage VFX"
+                },
+                {
+                    "id": "lesson_8_5",
+                    "title": "On Damage Knockback"
+                },
+                {
+                    "id": "lesson_8_6",
+                    "title": "Enemy's Death"
+                },
+                {
+                    "id": "lesson_8_7",
+                    "title": "layers Death"
+                },
+                {
+                    "id": "lesson_8_8",
+                    "title": "Interface an Hem Chest"
+                },
+                {
+                    "id": "lesson_8_9",
+                    "title": "Enemy Stunned State"
+                },
+                {
+                    "id": "lesson_8_10",
+                    "title": "Player Counter Attack State & Logic"
+                },
+                {
+                    "id": "lesson_8_11",
+                    "title": "0n Hit VFX"
+                },
+                {
+                    "id": "lesson_8_12",
+                    "title": "Health bar"
+                },
+                {
+                    "id": "lesson_8_13",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_9",
+            "title": "Skill Tree System & UI",
+            "lessons": [
+                {
+                    "id": "lesson_9_1",
+                    "title": "Getting Assets"
+                },
+                {
+                    "id": "lesson_9_2",
+                    "title": "Sl Tree Node"
+                },
+                {
+                    "id": "lesson_9_3",
+                    "title": "5 Data"
+                },
+                {
+                    "id": "lesson_9_4",
+                    "title": "Sl Tree Tool Tip"
+                },
+                {
+                    "id": "lesson_9_5",
+                    "title": "iil Tre Connections"
+                },
+                {
+                    "id": "lesson_9_6",
+                    "title": "Sl Tree Unlock System"
+                },
+                {
+                    "id": "lesson_9_7",
+                    "title": "Tee Final Touches"
+                },
+                {
+                    "id": "lesson_9_8",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_10",
+            "title": "Core Skill System",
+            "lessons": [
+                {
+                    "id": "lesson_10_1",
+                    "title": "Skill Manager & Cooldown"
+                },
+                {
+                    "id": "lesson_10_2",
+                    "title": "Unlock System"
+                },
+                {
+                    "id": "lesson_10_3",
+                    "title": "Dash Abity Setup"
+                },
+                {
+                    "id": "lesson_10_4",
+                    "title": "Shard Skil Object"
+                },
+                {
+                    "id": "lesson_10_5",
+                    "title": "Shard Unlock & Default Unlocks"
+                },
+                {
+                    "id": "lesson_10_6",
+                    "title": "Shard Upgrades - Moving shard, Multicast"
+                },
+                {
+                    "id": "lesson_10_7",
+                    "title": "Shard Upgrades - Teleport, Health rewind"
+                },
+                {
+                    "id": "lesson_10_8",
+                    "title": "Skil Damage & Effect Scaling"
+                },
+                {
+                    "id": "lesson_10_9",
+                    "title": "Time Shard & Quick Dash Synergy"
+                },
+                {
+                    "id": "lesson_10_10",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_11",
+            "title": "Advanced Skills & Upgrades",
+            "lessons": [
+                {
+                    "id": "lesson_11_1",
+                    "title": "Planned skills"
+                },
+                {
+                    "id": "lesson_11_2",
+                    "title": "Sword Throw State"
+                },
+                {
+                    "id": "lesson_11_3",
+                    "title": "Sword Throw Trajectory"
+                },
+                {
+                    "id": "lesson_11_4",
+                    "title": "Sword Sil Object"
+                },
+                {
+                    "id": "lesson_11_5",
+                    "title": "Sword Skil Upgrades - Peirce and Spin"
+                },
+                {
+                    "id": "lesson_11_6",
+                    "title": "Sword Sl Upgrade - Bounce"
+                },
+                {
+                    "id": "lesson_11_7",
+                    "title": "Time Echo Object"
+                },
+                {
+                    "id": "lesson_11_8",
+                    "title": "Time Echo Upgrade - Offense Upgrades"
+                },
+                {
+                    "id": "lesson_11_9",
+                    "title": "Time Echo Upgrade - Uiity"
+                },
+                {
+                    "id": "lesson_11_10",
+                    "title": "Domain Expansion State"
+                },
+                {
+                    "id": "lesson_11_11",
+                    "title": "Domain Expansion Object"
+                },
+                {
+                    "id": "lesson_11_12",
+                    "title": "Domain Expansion Upgrades"
+                },
+                {
+                    "id": "lesson_11_13",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_12",
+            "title": "Inventory, Equipment & Item Systems",
+            "lessons": [
+                {
+                    "id": "lesson_12_1",
+                    "title": "Item Data and ftem Object."
+                },
+                {
+                    "id": "lesson_12_2",
+                    "title": "Inventory & Inventory ftems."
+                },
+                {
+                    "id": "lesson_12_3",
+                    "title": "Inventory Ul"
+                },
+                {
+                    "id": "lesson_12_4",
+                    "title": "Stackable Items"
+                },
+                {
+                    "id": "lesson_12_5",
+                    "title": "Equipment - Part"
+                },
+                {
+                    "id": "lesson_12_6",
+                    "title": "Equipment - Part 2"
+                },
+                {
+                    "id": "lesson_12_7",
+                    "title": "Stackable Item Bug Fix"
+                },
+                {
+                    "id": "lesson_12_8",
+                    "title": "tem Tool Tip"
+                },
+                {
+                    "id": "lesson_12_9",
+                    "title": "Character Stats Ul Setup"
+                },
+                {
+                    "id": "lesson_12_10",
+                    "title": "Charcater Stats Ul Logic"
+                },
+                {
+                    "id": "lesson_12_11",
+                    "title": "Stats ToolTip & Vet another bug fix"
+                },
+                {
+                    "id": "lesson_12_12",
+                    "title": "Consumable item - Potions"
+                },
+                {
+                    "id": "lesson_12_13",
+                    "title": "New Consumables, Health Bug Fx, and Inventory Toggle"
+                },
+                {
+                    "id": "lesson_12_14",
+                    "title": "Unique tems"
+                },
+                {
+                    "id": "lesson_12_15",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_13",
+            "title": "Crafting, Storage, Shops & Loot",
+            "lessons": [
+                {
+                    "id": "lesson_13_1",
+                    "title": "Storage & Merchant Objects NPC"
+                },
+                {
+                    "id": "lesson_13_2",
+                    "title": "Storage logic & Ul - Pat 1"
+                },
+                {
+                    "id": "lesson_13_3",
+                    "title": "Storage logic & Ul - Part 2"
+                },
+                {
+                    "id": "lesson_13_4",
+                    "title": "Craft Logic - Pat 1"
+                },
+                {
+                    "id": "lesson_13_5",
+                    "title": "Crat Logic - Part 2"
+                },
+                {
+                    "id": "lesson_13_6",
+                    "title": "Shop Logic - Part 1"
+                },
+                {
+                    "id": "lesson_13_7",
+                    "title": "Shop Logic - Pat 2"
+                },
+                {
+                    "id": "lesson_13_8",
+                    "title": "Loot Drop System"
+                },
+                {
+                    "id": "lesson_13_9",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_14",
+            "title": "UI Controls & In game UI",
+            "lessons": [
+                {
+                    "id": "lesson_14_1",
+                    "title": "Health bar and XP bar"
+                },
+                {
+                    "id": "lesson_14_2",
+                    "title": "Sidl bar"
+                },
+                {
+                    "id": "lesson_14_3",
+                    "title": "Quick tem Slots"
+                },
+                {
+                    "id": "lesson_14_4",
+                    "title": "Quick tem Slots - Feature Tweaks"
+                },
+                {
+                    "id": "lesson_14_5",
+                    "title": "Options Ul"
+                },
+                {
+                    "id": "lesson_14_6",
+                    "title": "U1 Controls"
+                },
+                {
+                    "id": "lesson_14_7",
+                    "title": "Final Touches"
+                },
+                {
+                    "id": "lesson_14_8",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_15",
+            "title": "Save System",
+            "lessons": [
+                {
+                    "id": "lesson_15_1",
+                    "title": "Save System & Encryption"
+                },
+                {
+                    "id": "lesson_15_2",
+                    "title": "Save Load - hems"
+                },
+                {
+                    "id": "lesson_15_3",
+                    "title": "Save & Load - Storage & Equipment"
+                },
+                {
+                    "id": "lesson_15_4",
+                    "title": "Save & Load - Skis"
+                },
+                {
+                    "id": "lesson_15_5",
+                    "title": "Save & Load - Checkpoints"
+                },
+                {
+                    "id": "lesson_15_6",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_16",
+            "title": "Scene Management",
+            "lessons": [
+                {
+                    "id": "lesson_16_1",
+                    "title": "Prepare levels"
+                },
+                {
+                    "id": "lesson_16_2",
+                    "title": "EnterEt - Waypoints"
+                },
+                {
+                    "id": "lesson_16_3",
+                    "title": "Game Manager"
+                },
+                {
+                    "id": "lesson_16_4",
+                    "title": "Checkpoints & Respawn"
+                },
+                {
+                    "id": "lesson_16_5",
+                    "title": "Portal Scroll - Part 1"
+                },
+                {
+                    "id": "lesson_16_6",
+                    "title": "Portal Scroll Pat 2."
+                },
+                {
+                    "id": "lesson_16_7",
+                    "title": "Main Menu"
+                },
+                {
+                    "id": "lesson_16_8",
+                    "title": "Game Over"
+                },
+                {
+                    "id": "lesson_16_9",
+                    "title": "Scene Transition Effect"
+                },
+                {
+                    "id": "lesson_16_10",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_17",
+            "title": "Audio",
+            "lessons": [
+                {
+                    "id": "lesson_17_1",
+                    "title": "Assets & Audio database"
+                },
+                {
+                    "id": "lesson_17_2",
+                    "title": "Audio Manager & SFX"
+                },
+                {
+                    "id": "lesson_17_3",
+                    "title": "SFX Distance & Looped Audio"
+                },
+                {
+                    "id": "lesson_17_4",
+                    "title": "Background Music"
+                },
+                {
+                    "id": "lesson_17_5",
+                    "title": "Audio Settings & Save"
+                },
+                {
+                    "id": "lesson_17_6",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_18",
+            "title": "Quest System",
+            "lessons": [
+                {
+                    "id": "lesson_18_1",
+                    "title": "Quest Database & New Quests"
+                },
+                {
+                    "id": "lesson_18_2",
+                    "title": "Quest U1- Setup"
+                },
+                {
+                    "id": "lesson_18_3",
+                    "title": "Quest Ul Logic - Part 1"
+                },
+                {
+                    "id": "lesson_18_4",
+                    "title": "Quest Ul Logic -Part2"
+                },
+                {
+                    "id": "lesson_18_5",
+                    "title": "Quest Manager & Quest Progress"
+                },
+                {
+                    "id": "lesson_18_6",
+                    "title": "Quest Reward"
+                },
+                {
+                    "id": "lesson_18_7",
+                    "title": "Quest Save & Load"
+                },
+                {
+                    "id": "lesson_18_8",
+                    "title": "Quest Journal"
+                },
+                {
+                    "id": "lesson_18_9",
+                    "title": "Quest tems Delivery"
+                },
+                {
+                    "id": "lesson_18_10",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_19",
+            "title": "Dialogue System",
+            "lessons": [
+                {
+                    "id": "lesson_19_1",
+                    "title": "Dialogue Data."
+                },
+                {
+                    "id": "lesson_19_2",
+                    "title": "Dialogue Ul"
+                },
+                {
+                    "id": "lesson_19_3",
+                    "title": "Dialogue Typewriter"
+                },
+                {
+                    "id": "lesson_19_4",
+                    "title": "Dialogue Actions"
+                },
+                {
+                    "id": "lesson_19_5",
+                    "title": "Dialogue Multiple Chaices"
+                },
+                {
+                    "id": "lesson_19_6",
+                    "title": "Bug Fixes & Other Dislogue Actions"
+                },
+                {
+                    "id": "lesson_19_7",
+                    "title": "Clean up & Project"
+                }
+            ]
+        },
+        {
+            "id": "chapter_20",
+            "title": "Additional enemies",
+            "lessons": [
+                {
+                    "id": "lesson_20_1",
+                    "title": "Enemy Slime - Part 1"
+                },
+                {
+                    "id": "lesson_20_2",
+                    "title": "Enemy Slime - Part 2"
+                },
+                {
+                    "id": "lesson_20_3",
+                    "title": "Enemy Archer -Part 1"
+                },
+                {
+                    "id": "lesson_20_4",
+                    "title": "Enemy Archer -Part 2"
+                },
+                {
+                    "id": "lesson_20_5",
+                    "title": "Enemy Mage - Part 1"
+                },
+                {
+                    "id": "lesson_20_6",
+                    "title": "Enemy Mage - Part 2"
+                },
+                {
+                    "id": "lesson_20_7",
+                    "title": "Enemy Mage - Part 3"
+                },
+                {
+                    "id": "lesson_20_8",
+                    "title": "Enemy Boss - Part 1"
+                },
+                {
+                    "id": "lesson_20_9",
+                    "title": "Enemy Boss - Part 2"
+                },
+                {
+                    "id": "lesson_20_10",
+                    "title": "Enemy Boss - Part 3"
+                },
+                {
+                    "id": "lesson_20_11",
+                    "title": "Clean up & Project"
                 }
             ]
         }
