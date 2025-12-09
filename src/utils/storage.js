@@ -1,5 +1,5 @@
-export const COURSE_DATA_URL = '/cource-runners/course.json';
-export const USERS_DATA_URL = '/cource-runners/users.json';
+export const COURSE_DATA_URL = '/UnityCourseTracker/course.json';
+export const USERS_DATA_URL = '/UnityCourseTracker/users.json';
 
 // Load course structure
 export async function loadCourseData() {
