@@ -32,7 +32,7 @@ export function Login() {
             let botName = import.meta.env.VITE_TELEGRAM_BOT_NAME || 'samplebot';
             if (botName.startsWith('@')) {
                 botName = botName.substring(1);
-            } у
+            }
             script.setAttribute('data-telegram-login', botName);
             script.setAttribute('data-size', 'large');
             script.setAttribute('data-onauth', 'onTelegramAuth(user)');
