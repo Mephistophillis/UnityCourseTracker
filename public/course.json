@@ -340,55 +340,63 @@
             "lessons": [
                 {
                     "id": "lesson_8_1",
-                    "title": "Target detection"
+                    "title": "1. Stat System Design & Stat Class"
                 },
                 {
                     "id": "lesson_8_2",
-                    "title": "Damage system"
+                    "title": "2. Stat groups"
                 },
                 {
                     "id": "lesson_8_3",
-                    "title": "Take Damage Override"
+                    "title": "3. Chance logic & Evasion system"
                 },
                 {
                     "id": "lesson_8_4",
-                    "title": "On Damage VFX"
+                    "title": "4. Physical Damage & Critical attack"
                 },
                 {
                     "id": "lesson_8_5",
-                    "title": "On Damage Knockback"
+                    "title": "5. Armor mitigation & Armor penetration"
                 },
                 {
                     "id": "lesson_8_6",
-                    "title": "Enemy's Death"
+                    "title": "6. Elemental Damage"
                 },
                 {
                     "id": "lesson_8_7",
-                    "title": "layers Death"
+                    "title": "7. Element Type & Elemental resistance"
                 },
                 {
                     "id": "lesson_8_8",
-                    "title": "Interface an Hem Chest"
+                    "title": "8. Chilled Status Effect"
                 },
                 {
                     "id": "lesson_8_9",
-                    "title": "Enemy Stunned State"
+                    "title": "9. Burned Status Effect"
                 },
                 {
                     "id": "lesson_8_10",
-                    "title": "Player Counter Attack State & Logic"
+                    "title": "10. Electrified Status Effect"
                 },
                 {
                     "id": "lesson_8_11",
-                    "title": "0n Hit VFX"
+                    "title": "11. Health Regen & Attack Speed"
                 },
                 {
                     "id": "lesson_8_12",
-                    "title": "Health bar"
+                    "title": "12. Interactable Buff Game Object"
                 },
                 {
                     "id": "lesson_8_13",
-                    "title": "Clean up & Project"
+                    "title": "13. Stat Modifiers"
+                },
+                {
+                    "id": "lesson_8_14",
+                    "title": "14. Default Stat Setup"
+                },
+                {
+                    "id": "lesson_8_15",
+                    "title": "15. Clean up & Project"
                 }
             ]
         },
