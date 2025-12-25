@@ -6,15 +6,15 @@
             "lessons": [
                 {
                     "id": "lesson_1_1",
-                    "title": "Important to know - Mindset of the course"
+                    "title": "1. Important to know - Mindset of the course"
                 },
                 {
                     "id": "lesson_1_2",
-                    "title": "Important to know - Bugs and Q&A"
+                    "title": "2. Important to know - Bugs and Q&A"
                 },
                 {
                     "id": "lesson_1_3",
-                    "title": "Important to know - Pep talk"
+                    "title": "3. Important to know - Pep talk"
                 }
             ]
         },
@@ -24,87 +24,87 @@
             "lessons": [
                 {
                     "id": "lesson_2_1",
-                    "title": "Important to know - Crash Course"
+                    "title": "1. Important to know - Crash Course"
                 },
                 {
                     "id": "lesson_2_2",
-                    "title": "Install Unity"
+                    "title": "2. Install Unity"
                 },
                 {
                     "id": "lesson_2_3",
-                    "title": "Windows and Tools"
+                    "title": "3. Windows and Tools"
                 },
                 {
                     "id": "lesson_2_4",
-                    "title": "Components in Unity"
+                    "title": "4. Components in Unity"
                 },
                 {
                     "id": "lesson_2_5",
-                    "title": "Basics of C#"
+                    "title": "5. Basics of C#"
                 },
                 {
                     "id": "lesson_2_6",
-                    "title": "Unity's execution order"
+                    "title": "6. Unity's execution order"
                 },
                 {
                     "id": "lesson_2_7",
-                    "title": "C# - Functions"
+                    "title": "7. C# - Functions"
                 },
                 {
                     "id": "lesson_2_8",
-                    "title": "Input & Movement"
+                    "title": "8. Input & Movement"
                 },
                 {
                     "id": "lesson_2_9",
-                    "title": "Decision making & Jump"
+                    "title": "9. Decision making & Jump"
                 },
                 {
                     "id": "lesson_2_10",
-                    "title": "Animator"
+                    "title": "10. Animator"
                 },
                 {
                     "id": "lesson_2_11",
-                    "title": "Animation transitions"
+                    "title": "11. Animation transitions"
                 },
                 {
                     "id": "lesson_2_12",
-                    "title": "Character flip logic"
+                    "title": "12. Character flip logic"
                 },
                 {
                     "id": "lesson_2_13",
-                    "title": "Collision detection"
+                    "title": "13. Collision detection"
                 },
                 {
                     "id": "lesson_2_14",
-                    "title": "Jump,Fall & Blend tree"
+                    "title": "14. Jump,Fall & Blend tree"
                 },
                 {
                     "id": "lesson_2_15",
-                    "title": "Attack animation"
+                    "title": "15. Attack animation"
                 },
                 {
                     "id": "lesson_2_16",
-                    "title": "Attack logic & Enemy detection"
+                    "title": "16. Attack logic & Enemy detection"
                 },
                 {
                     "id": "lesson_2_17",
-                    "title": "Timers & Cooldowns"
+                    "title": "17. Timers & Cooldowns"
                 },
                 {
                     "id": "lesson_2_18",
-                    "title": "OOP - Inheritance"
+                    "title": "18. OOP - Inheritance"
                 },
                 {
                     "id": "lesson_2_19",
-                    "title": "OOP - Polymorphism"
+                    "title": "19. OOP - Polymorphism"
                 },
                 {
                     "id": "lesson_2_20",
-                    "title": "OOP - Encapsulation"
+                    "title": "20. OOP - Encapsulation"
                 },
                 {
                     "id": "lesson_2_21",
-                    "title": "Conclusion & Project"
+                    "title": "21. Conclusion & Project"
                 }
             ]
         },
@@ -114,27 +114,27 @@
             "lessons": [
                 {
                     "id": "lesson_3_1",
-                    "title": "Create project & Get assets"
+                    "title": "1. Create project & Get assets"
                 },
                 {
                     "id": "lesson_3_2",
-                    "title": "What is Finite State Machine"
+                    "title": "2. What is Finite State Machine"
                 },
                 {
                     "id": "lesson_3_3",
-                    "title": "Create Finite State Machine"
+                    "title": "3. Create Finite State Machine"
                 },
                 {
                     "id": "lesson_3_4",
-                    "title": "New States & Structure"
+                    "title": "4. New States & Structure"
                 },
                 {
                     "id": "lesson_3_5",
-                    "title": "Setup New Input System"
+                    "title": "5. Setup New Input System"
                 },
                 {
                     "id": "lesson_3_6",
-                    "title": "Clean up & Project"
+                    "title": "6. Clean up & Project"
                 }
             ]
         },
@@ -144,59 +144,59 @@
             "lessons": [
                 {
                     "id": "lesson_4_1",
-                    "title": "Idle and Movement animations"
+                    "title": "1. Idle and Movement animations"
                 },
                 {
                     "id": "lesson_4_2",
-                    "title": "Movement logic"
+                    "title": "2. Movement logic"
                 },
                 {
                     "id": "lesson_4_3",
-                    "title": "Character Flip Logic"
+                    "title": "3. Character Flip Logic"
                 },
                 {
                     "id": "lesson_4_4",
-                    "title": "Jump - Input, States & Animations"
+                    "title": "4. Jump - Input, States & Animations"
                 },
                 {
                     "id": "lesson_4_5",
-                    "title": "Jump - Collision and Horizontal Movement"
+                    "title": "5. Jump - Collision and Horizontal Movement"
                 },
                 {
                     "id": "lesson_4_6",
-                    "title": "Wall Slide State"
+                    "title": "6. Wall Slide State"
                 },
                 {
                     "id": "lesson_4_7",
-                    "title": "Wall Jump State"
+                    "title": "7. Wall Jump State"
                 },
                 {
                     "id": "lesson_4_8",
-                    "title": "Dash State"
+                    "title": "8. Dash State"
                 },
                 {
                     "id": "lesson_4_9",
-                    "title": "Attack State"
+                    "title": "9. Attack State"
                 },
                 {
                     "id": "lesson_4_10",
-                    "title": "Combo attacks"
+                    "title": "10. Combo attacks"
                 },
                 {
                     "id": "lesson_4_11",
-                    "title": "Queue Combo Attacks"
+                    "title": "11. Queue Combo Attacks"
                 },
                 {
                     "id": "lesson_4_12",
-                    "title": "Jump Attack"
+                    "title": "12. Jump Attack"
                 },
                 {
                     "id": "lesson_4_13",
-                    "title": "Better Wall Detection, Idle & Move"
+                    "title": "13. Better Wall Detection, Idle & Move"
                 },
                 {
                     "id": "lesson_4_14",
-                    "title": "Clean up & Project"
+                    "title": "14. Clean up & Project"
                 }
             ]
         },
@@ -206,35 +206,35 @@
             "lessons": [
                 {
                     "id": "lesson_5_1",
-                    "title": "Tie Palette Setup & Assets"
+                    "title": "1. Tie Palette Setup & Assets"
                 },
                 {
                     "id": "lesson_5_2",
-                    "title": "Tile Map & Sorting Layers"
+                    "title": "2. Tile Map & Sorting Layers"
                 },
                 {
                     "id": "lesson_5_3",
-                    "title": "Cinemachine Camera"
+                    "title": "3. Cinemachine Camera"
                 },
                 {
                     "id": "lesson_5_4",
-                    "title": "Cinemachine Confiner"
+                    "title": "4. Cinemachine Confiner"
                 },
                 {
                     "id": "lesson_5_5",
-                    "title": "Parallax background"
+                    "title": "5. Parallax background"
                 },
                 {
                     "id": "lesson_5_6",
-                    "title": "Endless background"
+                    "title": "6. Endless background"
                 },
                 {
                     "id": "lesson_5_7",
-                    "title": "Demo Level Setup"
+                    "title": "7. Demo Level Setup"
                 },
                 {
                     "id": "lesson_5_8",
-                    "title": "Clean up & Project"
+                    "title": "8. Clean up & Project"
                 }
             ]
         },
@@ -244,35 +244,35 @@
             "lessons": [
                 {
                     "id": "lesson_6_1",
-                    "title": "Creating a Base Entity Script"
+                    "title": "1. Creating a Base Entity Script"
                 },
                 {
                     "id": "lesson_6_2",
-                    "title": "Enemy Setup"
+                    "title": "2. Enemy Setup"
                 },
                 {
                     "id": "lesson_6_3",
-                    "title": "Walk & idle"
+                    "title": "3. Walk & idle"
                 },
                 {
                     "id": "lesson_6_4",
-                    "title": "Attack State"
+                    "title": "4. Attack State"
                 },
                 {
                     "id": "lesson_6_5",
-                    "title": "Player Detection"
+                    "title": "5. Player Detection"
                 },
                 {
                     "id": "lesson_6_6",
-                    "title": "Chase & Attack"
+                    "title": "6. Chase & Attack"
                 },
                 {
                     "id": "lesson_6_7",
-                    "title": "Battle Timer & Retreat Abilty"
+                    "title": "7. Battle Timer & Retreat Abilty"
                 },
                 {
                     "id": "lesson_6_8",
-                    "title": "Clean up & Project"
+                    "title": "8. Clean up & Project"
                 }
             ]
         },
@@ -282,55 +282,55 @@
             "lessons": [
                 {
                     "id": "lesson_7_1",
-                    "title": "Target detection"
+                    "title": "1. Target detection"
                 },
                 {
                     "id": "lesson_7_2",
-                    "title": "Damage system"
+                    "title": "2. Damage system"
                 },
                 {
                     "id": "lesson_7_3",
-                    "title": "Take Damage Override"
+                    "title": "3. Take Damage Override"
                 },
                 {
                     "id": "lesson_7_4",
-                    "title": "On Damage VFX"
+                    "title": "4. On Damage VFX"
                 },
                 {
                     "id": "lesson_7_5",
-                    "title": "On Damage Knockback"
+                    "title": "5. On Damage Knockback"
                 },
                 {
                     "id": "lesson_7_6",
-                    "title": "Enemy's Death"
+                    "title": "6. Enemy's Death"
                 },
                 {
                     "id": "lesson_7_7",
-                    "title": "layers Death"
+                    "title": "7. layers Death"
                 },
                 {
                     "id": "lesson_7_8",
-                    "title": "Interface an Hem Chest"
+                    "title": "8. Interface an Hem Chest"
                 },
                 {
                     "id": "lesson_7_9",
-                    "title": "Enemy Stunned State"
+                    "title": "9. Enemy Stunned State"
                 },
                 {
                     "id": "lesson_7_10",
-                    "title": "Player Counter Attack State & Logic"
+                    "title": "10. Player Counter Attack State & Logic"
                 },
                 {
                     "id": "lesson_7_11",
-                    "title": "0n Hit VFX"
+                    "title": "11. 0n Hit VFX"
                 },
                 {
                     "id": "lesson_7_12",
-                    "title": "Health bar"
+                    "title": "12. Health bar"
                 },
                 {
                     "id": "lesson_7_13",
-                    "title": "Clean up & Project"
+                    "title": "13. Clean up & Project"
                 }
             ]
         },
@@ -406,35 +406,35 @@
             "lessons": [
                 {
                     "id": "lesson_9_1",
-                    "title": "Getting Assets"
+                    "title": "1. Getting Assets"
                 },
                 {
                     "id": "lesson_9_2",
-                    "title": "Sl Tree Node"
+                    "title": "2. Sl Tree Node"
                 },
                 {
                     "id": "lesson_9_3",
-                    "title": "5 Data"
+                    "title": "3. 5 Data"
                 },
                 {
                     "id": "lesson_9_4",
-                    "title": "Sl Tree Tool Tip"
+                    "title": "4. Sl Tree Tool Tip"
                 },
                 {
                     "id": "lesson_9_5",
-                    "title": "iil Tre Connections"
+                    "title": "5. iil Tre Connections"
                 },
                 {
                     "id": "lesson_9_6",
-                    "title": "Sl Tree Unlock System"
+                    "title": "6. Sl Tree Unlock System"
                 },
                 {
                     "id": "lesson_9_7",
-                    "title": "Tee Final Touches"
+                    "title": "7. Tee Final Touches"
                 },
                 {
                     "id": "lesson_9_8",
-                    "title": "Clean up & Project"
+                    "title": "8. Clean up & Project"
                 }
             ]
         },
@@ -444,43 +444,43 @@
             "lessons": [
                 {
                     "id": "lesson_10_1",
-                    "title": "Skill Manager & Cooldown"
+                    "title": "1. Skill Manager & Cooldown"
                 },
                 {
                     "id": "lesson_10_2",
-                    "title": "Unlock System"
+                    "title": "2. Unlock System"
                 },
                 {
                     "id": "lesson_10_3",
-                    "title": "Dash Abity Setup"
+                    "title": "3. Dash Abity Setup"
                 },
                 {
                     "id": "lesson_10_4",
-                    "title": "Shard Skil Object"
+                    "title": "4. Shard Skil Object"
                 },
                 {
                     "id": "lesson_10_5",
-                    "title": "Shard Unlock & Default Unlocks"
+                    "title": "5. Shard Unlock & Default Unlocks"
                 },
                 {
                     "id": "lesson_10_6",
-                    "title": "Shard Upgrades - Moving shard, Multicast"
+                    "title": "6. Shard Upgrades - Moving shard, Multicast"
                 },
                 {
                     "id": "lesson_10_7",
-                    "title": "Shard Upgrades - Teleport, Health rewind"
+                    "title": "7. Shard Upgrades - Teleport, Health rewind"
                 },
                 {
                     "id": "lesson_10_8",
-                    "title": "Skil Damage & Effect Scaling"
+                    "title": "8. Skil Damage & Effect Scaling"
                 },
                 {
                     "id": "lesson_10_9",
-                    "title": "Time Shard & Quick Dash Synergy"
+                    "title": "9. Time Shard & Quick Dash Synergy"
                 },
                 {
                     "id": "lesson_10_10",
-                    "title": "Clean up & Project"
+                    "title": "10. Clean up & Project"
                 }
             ]
         },
@@ -490,55 +490,55 @@
             "lessons": [
                 {
                     "id": "lesson_11_1",
-                    "title": "Planned skills"
+                    "title": "1. Planned skills"
                 },
                 {
                     "id": "lesson_11_2",
-                    "title": "Sword Throw State"
+                    "title": "2. Sword Throw State"
                 },
                 {
                     "id": "lesson_11_3",
-                    "title": "Sword Throw Trajectory"
+                    "title": "3. Sword Throw Trajectory"
                 },
                 {
                     "id": "lesson_11_4",
-                    "title": "Sword Sil Object"
+                    "title": "4. Sword Sil Object"
                 },
                 {
                     "id": "lesson_11_5",
-                    "title": "Sword Skil Upgrades - Peirce and Spin"
+                    "title": "5. Sword Skil Upgrades - Peirce and Spin"
                 },
                 {
                     "id": "lesson_11_6",
-                    "title": "Sword Sl Upgrade - Bounce"
+                    "title": "6. Sword Sl Upgrade - Bounce"
                 },
                 {
                     "id": "lesson_11_7",
-                    "title": "Time Echo Object"
+                    "title": "7. Time Echo Object"
                 },
                 {
                     "id": "lesson_11_8",
-                    "title": "Time Echo Upgrade - Offense Upgrades"
+                    "title": "8. Time Echo Upgrade - Offense Upgrades"
                 },
                 {
                     "id": "lesson_11_9",
-                    "title": "Time Echo Upgrade - Uiity"
+                    "title": "9. Time Echo Upgrade - Uiity"
                 },
                 {
                     "id": "lesson_11_10",
-                    "title": "Domain Expansion State"
+                    "title": "10. Domain Expansion State"
                 },
                 {
                     "id": "lesson_11_11",
-                    "title": "Domain Expansion Object"
+                    "title": "11. Domain Expansion Object"
                 },
                 {
                     "id": "lesson_11_12",
-                    "title": "Domain Expansion Upgrades"
+                    "title": "12. Domain Expansion Upgrades"
                 },
                 {
                     "id": "lesson_11_13",
-                    "title": "Clean up & Project"
+                    "title": "13. Clean up & Project"
                 }
             ]
         },
@@ -548,63 +548,63 @@
             "lessons": [
                 {
                     "id": "lesson_12_1",
-                    "title": "Item Data and ftem Object."
+                    "title": "1. Item Data and ftem Object."
                 },
                 {
                     "id": "lesson_12_2",
-                    "title": "Inventory & Inventory ftems."
+                    "title": "2. Inventory & Inventory ftems."
                 },
                 {
                     "id": "lesson_12_3",
-                    "title": "Inventory Ul"
+                    "title": "3. Inventory Ul"
                 },
                 {
                     "id": "lesson_12_4",
-                    "title": "Stackable Items"
+                    "title": "4. Stackable Items"
                 },
                 {
                     "id": "lesson_12_5",
-                    "title": "Equipment - Part"
+                    "title": "5. Equipment - Part"
                 },
                 {
                     "id": "lesson_12_6",
-                    "title": "Equipment - Part 2"
+                    "title": "6. Equipment - Part 2"
                 },
                 {
                     "id": "lesson_12_7",
-                    "title": "Stackable Item Bug Fix"
+                    "title": "7. Stackable Item Bug Fix"
                 },
                 {
                     "id": "lesson_12_8",
-                    "title": "tem Tool Tip"
+                    "title": "8. tem Tool Tip"
                 },
                 {
                     "id": "lesson_12_9",
-                    "title": "Character Stats Ul Setup"
+                    "title": "9. Character Stats Ul Setup"
                 },
                 {
                     "id": "lesson_12_10",
-                    "title": "Charcater Stats Ul Logic"
+                    "title": "10. Charcater Stats Ul Logic"
                 },
                 {
                     "id": "lesson_12_11",
-                    "title": "Stats ToolTip & Vet another bug fix"
+                    "title": "11. Stats ToolTip & Vet another bug fix"
                 },
                 {
                     "id": "lesson_12_12",
-                    "title": "Consumable item - Potions"
+                    "title": "12. Consumable item - Potions"
                 },
                 {
                     "id": "lesson_12_13",
-                    "title": "New Consumables, Health Bug Fx, and Inventory Toggle"
+                    "title": "13. New Consumables, Health Bug Fx, and Inventory Toggle"
                 },
                 {
                     "id": "lesson_12_14",
-                    "title": "Unique tems"
+                    "title": "14. Unique tems"
                 },
                 {
                     "id": "lesson_12_15",
-                    "title": "Clean up & Project"
+                    "title": "15. Clean up & Project"
                 }
             ]
         },
@@ -614,39 +614,39 @@
             "lessons": [
                 {
                     "id": "lesson_13_1",
-                    "title": "Storage & Merchant Objects NPC"
+                    "title": "1. Storage & Merchant Objects NPC"
                 },
                 {
                     "id": "lesson_13_2",
-                    "title": "Storage logic & Ul - Pat 1"
+                    "title": "2. Storage logic & Ul - Pat 1"
                 },
                 {
                     "id": "lesson_13_3",
-                    "title": "Storage logic & Ul - Part 2"
+                    "title": "3. Storage logic & Ul - Part 2"
                 },
                 {
                     "id": "lesson_13_4",
-                    "title": "Craft Logic - Pat 1"
+                    "title": "4. Craft Logic - Pat 1"
                 },
                 {
                     "id": "lesson_13_5",
-                    "title": "Crat Logic - Part 2"
+                    "title": "5. Crat Logic - Part 2"
                 },
                 {
                     "id": "lesson_13_6",
-                    "title": "Shop Logic - Part 1"
+                    "title": "6. Shop Logic - Part 1"
                 },
                 {
                     "id": "lesson_13_7",
-                    "title": "Shop Logic - Pat 2"
+                    "title": "7. Shop Logic - Pat 2"
                 },
                 {
                     "id": "lesson_13_8",
-                    "title": "Loot Drop System"
+                    "title": "8. Loot Drop System"
                 },
                 {
                     "id": "lesson_13_9",
-                    "title": "Clean up & Project"
+                    "title": "9. Clean up & Project"
                 }
             ]
         },
@@ -656,35 +656,35 @@
             "lessons": [
                 {
                     "id": "lesson_14_1",
-                    "title": "Health bar and XP bar"
+                    "title": "1. Health bar and XP bar"
                 },
                 {
                     "id": "lesson_14_2",
-                    "title": "Sidl bar"
+                    "title": "2. Sidl bar"
                 },
                 {
                     "id": "lesson_14_3",
-                    "title": "Quick tem Slots"
+                    "title": "3. Quick tem Slots"
                 },
                 {
                     "id": "lesson_14_4",
-                    "title": "Quick tem Slots - Feature Tweaks"
+                    "title": "4. Quick tem Slots - Feature Tweaks"
                 },
                 {
                     "id": "lesson_14_5",
-                    "title": "Options Ul"
+                    "title": "5. Options Ul"
                 },
                 {
                     "id": "lesson_14_6",
-                    "title": "U1 Controls"
+                    "title": "6. U1 Controls"
                 },
                 {
                     "id": "lesson_14_7",
-                    "title": "Final Touches"
+                    "title": "7. Final Touches"
                 },
                 {
                     "id": "lesson_14_8",
-                    "title": "Clean up & Project"
+                    "title": "8. Clean up & Project"
                 }
             ]
         },
@@ -694,27 +694,27 @@
             "lessons": [
                 {
                     "id": "lesson_15_1",
-                    "title": "Save System & Encryption"
+                    "title": "1. Save System & Encryption"
                 },
                 {
                     "id": "lesson_15_2",
-                    "title": "Save Load - hems"
+                    "title": "2. Save Load - hems"
                 },
                 {
                     "id": "lesson_15_3",
-                    "title": "Save & Load - Storage & Equipment"
+                    "title": "3. Save & Load - Storage & Equipment"
                 },
                 {
                     "id": "lesson_15_4",
-                    "title": "Save & Load - Skis"
+                    "title": "4. Save & Load - Skis"
                 },
                 {
                     "id": "lesson_15_5",
-                    "title": "Save & Load - Checkpoints"
+                    "title": "5. Save & Load - Checkpoints"
                 },
                 {
                     "id": "lesson_15_6",
-                    "title": "Clean up & Project"
+                    "title": "6. Clean up & Project"
                 }
             ]
         },
@@ -724,43 +724,43 @@
             "lessons": [
                 {
                     "id": "lesson_16_1",
-                    "title": "Prepare levels"
+                    "title": "1. Prepare levels"
                 },
                 {
                     "id": "lesson_16_2",
-                    "title": "EnterEt - Waypoints"
+                    "title": "2. EnterEt - Waypoints"
                 },
                 {
                     "id": "lesson_16_3",
-                    "title": "Game Manager"
+                    "title": "3. Game Manager"
                 },
                 {
                     "id": "lesson_16_4",
-                    "title": "Checkpoints & Respawn"
+                    "title": "4. Checkpoints & Respawn"
                 },
                 {
                     "id": "lesson_16_5",
-                    "title": "Portal Scroll - Part 1"
+                    "title": "5. Portal Scroll - Part 1"
                 },
                 {
                     "id": "lesson_16_6",
-                    "title": "Portal Scroll Pat 2."
+                    "title": "6. Portal Scroll Pat 2."
                 },
                 {
                     "id": "lesson_16_7",
-                    "title": "Main Menu"
+                    "title": "7. Main Menu"
                 },
                 {
                     "id": "lesson_16_8",
-                    "title": "Game Over"
+                    "title": "8. Game Over"
                 },
                 {
                     "id": "lesson_16_9",
-                    "title": "Scene Transition Effect"
+                    "title": "9. Scene Transition Effect"
                 },
                 {
                     "id": "lesson_16_10",
-                    "title": "Clean up & Project"
+                    "title": "10. Clean up & Project"
                 }
             ]
         },
@@ -770,27 +770,27 @@
             "lessons": [
                 {
                     "id": "lesson_17_1",
-                    "title": "Assets & Audio database"
+                    "title": "1. Assets & Audio database"
                 },
                 {
                     "id": "lesson_17_2",
-                    "title": "Audio Manager & SFX"
+                    "title": "2. Audio Manager & SFX"
                 },
                 {
                     "id": "lesson_17_3",
-                    "title": "SFX Distance & Looped Audio"
+                    "title": "3. SFX Distance & Looped Audio"
                 },
                 {
                     "id": "lesson_17_4",
-                    "title": "Background Music"
+                    "title": "4. Background Music"
                 },
                 {
                     "id": "lesson_17_5",
-                    "title": "Audio Settings & Save"
+                    "title": "5. Audio Settings & Save"
                 },
                 {
                     "id": "lesson_17_6",
-                    "title": "Clean up & Project"
+                    "title": "6. Clean up & Project"
                 }
             ]
         },
@@ -800,43 +800,43 @@
             "lessons": [
                 {
                     "id": "lesson_18_1",
-                    "title": "Quest Database & New Quests"
+                    "title": "1. Quest Database & New Quests"
                 },
                 {
                     "id": "lesson_18_2",
-                    "title": "Quest U1- Setup"
+                    "title": "2. Quest U1- Setup"
                 },
                 {
                     "id": "lesson_18_3",
-                    "title": "Quest Ul Logic - Part 1"
+                    "title": "3. Quest Ul Logic - Part 1"
                 },
                 {
                     "id": "lesson_18_4",
-                    "title": "Quest Ul Logic -Part2"
+                    "title": "4. Quest Ul Logic -Part2"
                 },
                 {
                     "id": "lesson_18_5",
-                    "title": "Quest Manager & Quest Progress"
+                    "title": "5. Quest Manager & Quest Progress"
                 },
                 {
                     "id": "lesson_18_6",
-                    "title": "Quest Reward"
+                    "title": "6. Quest Reward"
                 },
                 {
                     "id": "lesson_18_7",
-                    "title": "Quest Save & Load"
+                    "title": "7. Quest Save & Load"
                 },
                 {
                     "id": "lesson_18_8",
-                    "title": "Quest Journal"
+                    "title": "8. Quest Journal"
                 },
                 {
                     "id": "lesson_18_9",
-                    "title": "Quest tems Delivery"
+                    "title": "9. Quest tems Delivery"
                 },
                 {
                     "id": "lesson_18_10",
-                    "title": "Clean up & Project"
+                    "title": "10. Clean up & Project"
                 }
             ]
         },
@@ -846,31 +846,31 @@
             "lessons": [
                 {
                     "id": "lesson_19_1",
-                    "title": "Dialogue Data."
+                    "title": "1. Dialogue Data."
                 },
                 {
                     "id": "lesson_19_2",
-                    "title": "Dialogue Ul"
+                    "title": "2. Dialogue Ul"
                 },
                 {
                     "id": "lesson_19_3",
-                    "title": "Dialogue Typewriter"
+                    "title": "3. Dialogue Typewriter"
                 },
                 {
                     "id": "lesson_19_4",
-                    "title": "Dialogue Actions"
+                    "title": "4. Dialogue Actions"
                 },
                 {
                     "id": "lesson_19_5",
-                    "title": "Dialogue Multiple Chaices"
+                    "title": "5. Dialogue Multiple Chaices"
                 },
                 {
                     "id": "lesson_19_6",
-                    "title": "Bug Fixes & Other Dislogue Actions"
+                    "title": "6. Bug Fixes & Other Dislogue Actions"
                 },
                 {
                     "id": "lesson_19_7",
-                    "title": "Clean up & Project"
+                    "title": "7. Clean up & Project"
                 }
             ]
         },
@@ -880,47 +880,47 @@
             "lessons": [
                 {
                     "id": "lesson_20_1",
-                    "title": "Enemy Slime - Part 1"
+                    "title": "1. Enemy Slime - Part 1"
                 },
                 {
                     "id": "lesson_20_2",
-                    "title": "Enemy Slime - Part 2"
+                    "title": "2. Enemy Slime - Part 2"
                 },
                 {
                     "id": "lesson_20_3",
-                    "title": "Enemy Archer -Part 1"
+                    "title": "3. Enemy Archer -Part 1"
                 },
                 {
                     "id": "lesson_20_4",
-                    "title": "Enemy Archer -Part 2"
+                    "title": "4. Enemy Archer -Part 2"
                 },
                 {
                     "id": "lesson_20_5",
-                    "title": "Enemy Mage - Part 1"
+                    "title": "5. Enemy Mage - Part 1"
                 },
                 {
                     "id": "lesson_20_6",
-                    "title": "Enemy Mage - Part 2"
+                    "title": "6. Enemy Mage - Part 2"
                 },
                 {
                     "id": "lesson_20_7",
-                    "title": "Enemy Mage - Part 3"
+                    "title": "7. Enemy Mage - Part 3"
                 },
                 {
                     "id": "lesson_20_8",
-                    "title": "Enemy Boss - Part 1"
+                    "title": "8. Enemy Boss - Part 1"
                 },
                 {
                     "id": "lesson_20_9",
-                    "title": "Enemy Boss - Part 2"
+                    "title": "9. Enemy Boss - Part 2"
                 },
                 {
                     "id": "lesson_20_10",
-                    "title": "Enemy Boss - Part 3"
+                    "title": "10. Enemy Boss - Part 3"
                 },
                 {
                     "id": "lesson_20_11",
-                    "title": "Clean up & Project"
+                    "title": "11. Clean up & Project"
                 }
             ]
         }
