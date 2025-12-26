@@ -76,6 +76,10 @@
 .lesson-item {
     padding: 12px 0;
     border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .lesson-item:last-child {
@@ -88,6 +92,8 @@
     gap: 12px;
     cursor: pointer;
     user-select: none;
+    flex: 1;
+    min-width: 0;
 }
 
 .checkbox-label input {
@@ -137,4 +143,36 @@
 .completed .lesson-title {
     /* text-decoration: line-through; */
     color: var(--text-secondary);
+}
+
+.copy-button {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: all 0.2s;
+    flex-shrink: 0;
+    opacity: 0;
+}
+
+.lesson-item:hover .copy-button {
+    opacity: 1;
+}
+
+.copy-button:hover {
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+.copy-button:active {
+    transform: scale(0.95);
+}
+
+.copy-button svg {
+    display: block;
 }
