@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { getCurrentUser, loadUsersData, loadCourseData, logoutUser } from '../utils/storage';
+import { useTheme } from '../hooks/useTheme';
 import './Home.css';
 
 export function Home() {
@@ -9,6 +10,7 @@ export function Home() {
     const [currentUser, setCurrentUser] = useState(null);
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
+    const { theme, toggleTheme } = useTheme();
 
     useEffect(() => {
         const user = getCurrentUser();
@@ -69,6 +71,9 @@ export function Home() {
                             <span>{currentUser.first_name || currentUser.username}</span>
                         </div>
                     )}
+                    <button onClick={toggleTheme} className="theme-btn" title="Toggle theme">
+                        {theme === 'dark' ? '☀️' : '🌙'}
+                    </button>
                     <button onClick={handleLogout} className="logout-btn">Logout</button>
                 </div>
             </header>

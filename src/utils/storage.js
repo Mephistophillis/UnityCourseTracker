@@ -1,6 +1,9 @@
 import { supabase } from '../lib/supabase';
-export const COURSE_DATA_URL = '/UnityCourseTracker/course.json';
-export const USERS_DATA_URL = '/UnityCourseTracker/users.json';
+
+const isDev = import.meta.env.DEV;
+const basePath = isDev ? '' : '/UnityCourseTracker';
+export const COURSE_DATA_URL = `${basePath}/course.json`;
+export const DEV_USERS_URL = '/dev-users.json';
 
 // Load course structure
 export async function loadCourseData() {
@@ -9,8 +12,28 @@ export async function loadCourseData() {
     return response.json();
 }
 
-// Load users data from Supabase
+// Load users data - from JSON in dev mode, from Supabase in production
 export async function loadUsersData() {
+    if (isDev || !supabase) {
+        const response = await fetch(DEV_USERS_URL);
+        if (!response.ok) return { users: [] };
+        const data = await response.json();
+
+        // Merge current user's progress from localStorage
+        const currentUser = getCurrentUser();
+        if (currentUser) {
+            const userIndex = data.users.findIndex(u => String(u.id) === String(currentUser.id));
+            if (userIndex >= 0) {
+                // Update existing user with localStorage progress
+                data.users[userIndex] = { ...data.users[userIndex], progress: currentUser.progress || {} };
+            } else {
+                // Add current user to the list
+                data.users.push(currentUser);
+            }
+        }
+        return data;
+    }
+
     const { data, error } = await supabase
         .from('profiles')
         .select('*');
@@ -34,8 +57,19 @@ export function getUsers() {
     return [];
 }
 
-// Get specific user (Async now recommended, but keeping signature if possible or refactoring caller)
+// Get specific user - from JSON in dev mode, from Supabase in production
 export async function getUser(userId) {
+    if (isDev || !supabase) {
+        // For current user, return from localStorage (has latest progress)
+        const currentUser = getCurrentUser();
+        if (currentUser && String(currentUser.id) === String(userId)) {
+            return currentUser;
+        }
+        // For other users, load from JSON
+        const { users } = await loadUsersData();
+        return users.find(u => String(u.id) === String(userId)) || null;
+    }
+
     const { data, error } = await supabase
         .from('profiles')
         .select('*')
@@ -46,8 +80,29 @@ export async function getUser(userId) {
     return data;
 }
 
-// Update user progress
+// Update user progress - localStorage in dev mode, Supabase in production
 export async function updateUserProgress(userId, chapterId, lessonId, completed) {
+    if (isDev || !supabase) {
+        // In dev mode, update progress in localStorage (currentUser)
+        const currentUser = getCurrentUser();
+        if (!currentUser || String(currentUser.id) !== String(userId)) return false;
+
+        let progress = currentUser.progress || {};
+        if (!progress[chapterId]) progress[chapterId] = { lessons: [] };
+
+        let lessonIndex = progress[chapterId].lessons.findIndex(l => l.id === lessonId);
+        if (lessonIndex >= 0) {
+            progress[chapterId].lessons[lessonIndex].completed = completed;
+        } else {
+            progress[chapterId].lessons.push({ id: lessonId, completed });
+        }
+
+        currentUser.progress = progress;
+        loginUser(currentUser);
+        return true;
+    }
+
+    // Production: use Supabase
     // 1. Get current progress
     const { data: user, error: fetchError } = await supabase
         .from('profiles')
@@ -68,8 +123,6 @@ export async function updateUserProgress(userId, chapterId, lessonId, completed)
     if (lessonIndex >= 0) {
         progress[chapterId].lessons[lessonIndex].completed = completed;
     } else {
-        // If lesson doesn't exist in progress (rare if structure is rigid, but possible if dynamic), add it
-        // Ideally we need the title from course.json, but here we just store ID and state
         progress[chapterId].lessons.push({ id: lessonId, completed });
     }
 
@@ -97,6 +150,11 @@ export function logoutUser() {
 }
 
 export async function registerUser(userData) {
+    // In dev mode, don't register to Supabase
+    if (isDev || !supabase) {
+        return userData;
+    }
+
     const { data: existingUser } = await supabase
         .from('profiles')
         .select('*')

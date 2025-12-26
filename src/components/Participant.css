@@ -12,11 +12,29 @@
     margin-bottom: 24px;
 }
 
-.back-link {
-    display: inline-block;
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 24px;
+}
+
+.back-link {
     font-size: 14px;
     color: var(--text-secondary);
+}
+
+.theme-btn {
+    background-color: transparent;
+    border: 1px solid var(--border);
+    font-size: 18px;
+    padding: 6px 10px;
+    line-height: 1;
+}
+
+.theme-btn:hover {
+    background-color: var(--border);
+    opacity: 1;
 }
 
 .profile-summary {
@@ -47,6 +65,21 @@
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 8px;
+    background-color: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 4px;
+    transition: width 0.5s ease-out;
 }
 
 .progress-large .progress-bar {
@@ -127,7 +160,7 @@
 /* Disabled state styling */
 .checkbox-label input:disabled+.checkbox-custom {
     opacity: 0.6;
-    background-color: #f5f5f5;
+    background-color: var(--border);
     cursor: not-allowed;
 }
 

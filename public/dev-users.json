@@ -1,0 +1,53 @@
+{
+    "users": [
+        {
+            "id": "dev_user_1",
+            "username": "TestUser1",
+            "avatar": null,
+            "progress": {
+                "chapter_1": {
+                    "lessons": [
+                        { "id": "lesson_1_1", "completed": true },
+                        { "id": "lesson_1_2", "completed": true },
+                        { "id": "lesson_1_3", "completed": false }
+                    ]
+                },
+                "chapter_2": {
+                    "lessons": [
+                        { "id": "lesson_2_1", "completed": true },
+                        { "id": "lesson_2_2", "completed": true }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "dev_user_2",
+            "username": "TestUser2",
+            "avatar": null,
+            "progress": {
+                "chapter_1": {
+                    "lessons": [
+                        { "id": "lesson_1_1", "completed": true },
+                        { "id": "lesson_1_2", "completed": true },
+                        { "id": "lesson_1_3", "completed": true }
+                    ]
+                },
+                "chapter_2": {
+                    "lessons": [
+                        { "id": "lesson_2_1", "completed": true },
+                        { "id": "lesson_2_2", "completed": true },
+                        { "id": "lesson_2_3", "completed": true },
+                        { "id": "lesson_2_4", "completed": true },
+                        { "id": "lesson_2_5", "completed": true }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "dev_user_3",
+            "username": "NewUser",
+            "avatar": null,
+            "progress": {}
+        }
+    ]
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { getCurrentUser, loadUsersData, loadCourseData, updateUserProgress } from '../utils/storage';
+import { useTheme } from '../hooks/useTheme';
 import './Participant.css';
 
 export function Participant() {
@@ -11,6 +12,7 @@ export function Participant() {
     const [isOwnProfile, setIsOwnProfile] = useState(false);
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
+    const { theme, toggleTheme } = useTheme();
 
     useEffect(() => {
         const curr = getCurrentUser();
@@ -124,7 +126,12 @@ export function Participant() {
     return (
         <div className="participant-page">
             <header className="page-header">
-                <Link to="/home" className="back-link">← Back to Dashboard</Link>
+                <div className="header-top">
+                    <Link to="/home" className="back-link">← Back to Dashboard</Link>
+                    <button onClick={toggleTheme} className="theme-btn" title="Toggle theme">
+                        {theme === 'dark' ? '☀️' : '🌙'}
+                    </button>
+                </div>
                 <div className="profile-summary">
                     <img src={user.avatar} alt={user.username} className="avatar-large" />
                     <div className="profile-details">
