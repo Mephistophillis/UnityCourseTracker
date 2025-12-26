@@ -89,6 +89,18 @@ export function Participant() {
         }
     };
 
+    const handleCopyTitle = async (title, event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        try {
+            await navigator.clipboard.writeText(title);
+            // Visual feedback could be added here (optional)
+        } catch (err) {
+            console.error('Failed to copy text:', err);
+        }
+    };
+
     if (loading) return <div className="loading">Loading...</div>;
     if (!user || !course) return <div className="error">User or Course data not found</div>;
 
@@ -152,6 +164,17 @@ export function Participant() {
                                             <span className="checkbox-custom"></span>
                                             <span className="lesson-title">{lesson.title}</span>
                                         </label>
+                                        <button
+                                            className="copy-button"
+                                            onClick={(e) => handleCopyTitle(lesson.title, e)}
+                                            title="Copy lesson title"
+                                            aria-label="Copy lesson title"
+                                        >
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.5 4.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H13.5C14.0523 1.5 14.5 1.94772 14.5 2.5V9.5C14.5 10.0523 14.0523 10.5 13.5 10.5H11.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                                <rect x="1.5" y="5.5" width="8" height="9" rx="1" stroke="currentColor" strokeWidth="1.5"/>
+                                            </svg>
+                                        </button>
                                     </li>
                                 );
                             })}
