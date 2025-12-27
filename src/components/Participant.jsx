@@ -11,6 +11,11 @@ export function Participant() {
     const [currentUser, setCurrentUser] = useState(null);
     const [isOwnProfile, setIsOwnProfile] = useState(false);
     const [loading, setLoading] = useState(true);
+    const [collapsedChapters, setCollapsedChapters] = useState(() => {
+        // Load collapsed state from localStorage
+        const saved = localStorage.getItem(`collapsedChapters_${userId}`);
+        return saved ? new Set(JSON.parse(saved)) : new Set();
+    });
     const navigate = useNavigate();
     const { theme, toggleTheme } = useTheme();
 
@@ -33,7 +38,7 @@ export function Participant() {
                 // Supabase returns { users: [] } from loadUsersData
                 // If we are looking for a specific user but rely on the "list", we might miss if list is paginated (future proofing)
                 // But for now, let's use getUser directly if specific user is needed, OR stick to list if we want to show rank/etc.
-                // The original code used the list to find the user. 
+                // The original code used the list to find the user.
 
                 // Better approach: fetch specific user profile directly for reliability
                 const directUser = await import('../utils/storage').then(m => m.getUser(userId));
@@ -62,6 +67,11 @@ export function Participant() {
 
         fetchData();
     }, [userId, navigate]);
+
+    // Save collapsed state to localStorage whenever it changes
+    useEffect(() => {
+        localStorage.setItem(`collapsedChapters_${userId}`, JSON.stringify([...collapsedChapters]));
+    }, [collapsedChapters, userId]);
 
     const handleCheckboxChange = async (chapterId, lessonId, currentCompleted) => {
         if (!isOwnProfile) return;
@@ -101,6 +111,18 @@ export function Participant() {
         } catch (err) {
             console.error('Failed to copy text:', err);
         }
+    };
+
+    const toggleChapter = (chapterId) => {
+        setCollapsedChapters(prev => {
+            const newSet = new Set(prev);
+            if (newSet.has(chapterId)) {
+                newSet.delete(chapterId);
+            } else {
+                newSet.add(chapterId);
+            }
+            return newSet;
+        });
     };
 
     if (loading) return <div className="loading">Loading...</div>;
@@ -147,47 +169,66 @@ export function Participant() {
             </header>
 
             <main className="course-content">
-                {course.chapters.map(chapter => (
-                    <div key={chapter.id} className="chapter-card">
-                        <h3>{chapter.title}</h3>
-                        <ul className="lessons-list">
-                            {chapter.lessons.map(lesson => {
-                                // Find corresponding user progress
-                                // Assuming structure matches. If keys might differ, need robust mapping.
-                                // user.progress[chapter.id] might need safety check
-                                const chapterProgress = user.progress[chapter.id];
-                                const userLesson = chapterProgress?.lessons.find(l => l.id === lesson.id);
-                                const isCompleted = userLesson?.completed || false;
+                {course.chapters.map(chapter => {
+                    const isCollapsed = collapsedChapters.has(chapter.id);
+                    return (
+                        <div key={chapter.id} className={`chapter-card ${isCollapsed ? 'collapsed' : ''}`}>
+                            <div className="chapter-header" onClick={() => toggleChapter(chapter.id)}>
+                                <h3>{chapter.title}</h3>
+                                <button className="collapse-toggle" aria-label={isCollapsed ? 'Expand chapter' : 'Collapse chapter'}>
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className={`collapse-icon ${isCollapsed ? 'collapsed' : ''}`}
+                                    >
+                                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            {!isCollapsed && (
+                                <ul className="lessons-list">
+                                    {chapter.lessons.map(lesson => {
+                                        // Find corresponding user progress
+                                        // Assuming structure matches. If keys might differ, need robust mapping.
+                                        // user.progress[chapter.id] might need safety check
+                                        const chapterProgress = user.progress[chapter.id];
+                                        const userLesson = chapterProgress?.lessons.find(l => l.id === lesson.id);
+                                        const isCompleted = userLesson?.completed || false;
 
-                                return (
-                                    <li key={lesson.id} className={`lesson-item ${isCompleted ? 'completed' : ''}`}>
-                                        <label className="checkbox-label">
-                                            <input
-                                                type="checkbox"
-                                                checked={isCompleted}
-                                                disabled={!isOwnProfile}
-                                                onChange={() => handleCheckboxChange(chapter.id, lesson.id, isCompleted)}
-                                            />
-                                            <span className="checkbox-custom"></span>
-                                            <span className="lesson-title">{lesson.title}</span>
-                                        </label>
-                                        <button
-                                            className="copy-button"
-                                            onClick={(e) => handleCopyTitle(lesson.title, e)}
-                                            title="Copy lesson title"
-                                            aria-label="Copy lesson title"
-                                        >
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M5.5 4.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H13.5C14.0523 1.5 14.5 1.94772 14.5 2.5V9.5C14.5 10.0523 14.0523 10.5 13.5 10.5H11.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                                                <rect x="1.5" y="5.5" width="8" height="9" rx="1" stroke="currentColor" strokeWidth="1.5"/>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    </div>
-                ))}
+                                        return (
+                                            <li key={lesson.id} className={`lesson-item ${isCompleted ? 'completed' : ''}`}>
+                                                <label className="checkbox-label">
+                                                    <input
+                                                        type="checkbox"
+                                                        checked={isCompleted}
+                                                        disabled={!isOwnProfile}
+                                                        onChange={() => handleCheckboxChange(chapter.id, lesson.id, isCompleted)}
+                                                    />
+                                                    <span className="checkbox-custom"></span>
+                                                    <span className="lesson-title">{lesson.title}</span>
+                                                </label>
+                                                <button
+                                                    className="copy-button"
+                                                    onClick={(e) => handleCopyTitle(lesson.title, e)}
+                                                    title="Copy lesson title"
+                                                    aria-label="Copy lesson title"
+                                                >
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.5 4.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H13.5C14.0523 1.5 14.5 1.94772 14.5 2.5V9.5C14.5 10.0523 14.0523 10.5 13.5 10.5H11.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                                        <rect x="1.5" y="5.5" width="8" height="9" rx="1" stroke="currentColor" strokeWidth="1.5"/>
+                                                    </svg>
+                                                </button>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            )}
+                        </div>
+                    );
+                })}
             </main>
         </div>
     );

@@ -94,10 +94,53 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.chapter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    padding: 4px 0;
+    margin-bottom: 20px;
+    transition: opacity 0.2s;
+}
+
+.chapter-card.collapsed .chapter-header {
+    margin-bottom: 0;
+}
+
+.chapter-header:hover {
+    opacity: 0.8;
+}
+
 .chapter-card h3 {
-    margin: 0 0 20px 0;
+    margin: 0;
     font-size: 20px;
     color: var(--primary);
+}
+
+.collapse-toggle {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.collapse-toggle:hover {
+    color: var(--primary);
+}
+
+.collapse-icon {
+    transition: transform 0.3s ease;
+}
+
+.collapse-icon.collapsed {
+    transform: rotate(-90deg);
 }
 
 .lessons-list {
