@@ -626,27 +626,31 @@
                 },
                 {
                     "id": "lesson_13_4",
-                    "title": "4. Craft Logic - Pat 1"
+                    "title": "4. Craft UI"
                 },
                 {
                     "id": "lesson_13_5",
-                    "title": "5. Crat Logic - Part 2"
+                    "title": "5. Craft Logic - Pat 1"
                 },
                 {
                     "id": "lesson_13_6",
-                    "title": "6. Shop Logic - Part 1"
+                    "title": "6. Crat Logic - Part 2"
                 },
                 {
                     "id": "lesson_13_7",
-                    "title": "7. Shop Logic - Pat 2"
+                    "title": "7. Shop Logic - Part 1"
                 },
                 {
                     "id": "lesson_13_8",
-                    "title": "8. Loot Drop System"
+                    "title": "8. Shop Logic - Pat 2"
                 },
                 {
                     "id": "lesson_13_9",
-                    "title": "9. Clean up & Project"
+                    "title": "9. Loot Drop System"
+                },
+                {
+                    "id": "lesson_13_10",
+                    "title": "10. Clean up & Project"
                 }
             ]
         },
